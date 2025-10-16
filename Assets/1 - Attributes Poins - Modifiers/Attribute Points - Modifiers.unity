@@ -301,6 +301,17 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &828632891 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7375425668826769349, guid: 248940700e563564f94648329846c511, type: 3}
+  m_PrefabInstance: {fileID: 974291707}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &974291707
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -431,6 +442,34 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 379178189756676981, guid: 28cc3ad972935f9448cf1eead33875e4, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 379178189756676981, guid: 28cc3ad972935f9448cf1eead33875e4, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 379178189756676981, guid: 28cc3ad972935f9448cf1eead33875e4, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1995592575}
+    - target: {fileID: 379178189756676981, guid: 28cc3ad972935f9448cf1eead33875e4, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 379178189756676981, guid: 28cc3ad972935f9448cf1eead33875e4, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: UnequipGloves
+      objectReference: {fileID: 0}
+    - target: {fileID: 379178189756676981, guid: 28cc3ad972935f9448cf1eead33875e4, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: AttributeModifierExample, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 379178189756676981, guid: 28cc3ad972935f9448cf1eead33875e4, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 1524432488404663217, guid: 28cc3ad972935f9448cf1eead33875e4, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -446,6 +485,34 @@ PrefabInstance:
     - target: {fileID: 2868839608145835532, guid: 28cc3ad972935f9448cf1eead33875e4, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2873894785931304313, guid: 28cc3ad972935f9448cf1eead33875e4, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2873894785931304313, guid: 28cc3ad972935f9448cf1eead33875e4, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2873894785931304313, guid: 28cc3ad972935f9448cf1eead33875e4, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1995592575}
+    - target: {fileID: 2873894785931304313, guid: 28cc3ad972935f9448cf1eead33875e4, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2873894785931304313, guid: 28cc3ad972935f9448cf1eead33875e4, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: EquipGloves
+      objectReference: {fileID: 0}
+    - target: {fileID: 2873894785931304313, guid: 28cc3ad972935f9448cf1eead33875e4, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: AttributeModifierExample, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 2873894785931304313, guid: 28cc3ad972935f9448cf1eead33875e4, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 3652205870570905796, guid: 28cc3ad972935f9448cf1eead33875e4, type: 3}
       propertyPath: m_Name
@@ -715,7 +782,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1995592574}
-  - component: {fileID: 1995592573}
+  - component: {fileID: 1995592575}
   m_Layer: 0
   m_Name: Example
   m_TagString: Untagged
@@ -723,23 +790,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1995592573
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1995592572}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 01512d80979f6b84ebb28ae1e4d3168b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DistributePoints
-  _str: 0
-  _pointsLeft: 10
-  _buttonIncreaseSTR: {fileID: 0}
-  _textSTRPoints: {fileID: 0}
-  _textPointsLeft: {fileID: 0}
 --- !u!4 &1995592574
 Transform:
   m_ObjectHideFlags: 0
@@ -755,6 +805,22 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1995592575
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1995592572}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de9180a4110dd49438f418c491421af4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AttributeModifierExample
+  _agi:
+    <BaseValue>k__BackingField: 0
+    <FinalValue>k__BackingField: 0
+  _text: {fileID: 828632891}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
