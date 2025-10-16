@@ -48,7 +48,7 @@ public class Attribute
 
         foreach (AttributeModifier modifier in modifiers)
             if (modifier.Type == ModifierType.Percentage)
-                finalPercentage += (modifier.Amount / 100);
+                finalPercentage += (modifier.Amount / 100f);
 
         calculatedValue = calculatedValue * finalPercentage;
 
