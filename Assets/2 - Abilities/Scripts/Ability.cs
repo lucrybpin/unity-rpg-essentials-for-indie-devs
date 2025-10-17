@@ -7,6 +7,12 @@ public class Ability
     [field: SerializeField] public int Level { get; private set; }
     [field: SerializeField] public AbilityDefinition Definition { get; private set; }
 
+    public Ability(AbilityDefinition definition)
+    {
+        Definition = definition;
+        Level = 1;
+    }
+
     public void LevelUp()
     {
         if (Level < Definition.Levels.Count)
