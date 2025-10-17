@@ -119,6 +119,17 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!114 &9193424 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1117615708392672093, guid: d224764d6f808854e9b71d59007c377b, type: 3}
+  m_PrefabInstance: {fileID: 297127631}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &297127631
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -133,7 +144,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 305794124482985680, guid: d224764d6f808854e9b71d59007c377b, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 305794124482985680, guid: d224764d6f808854e9b71d59007c377b, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1995592575}
+    - target: {fileID: 305794124482985680, guid: d224764d6f808854e9b71d59007c377b, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: LevelUpMeteorStorm
+      objectReference: {fileID: 0}
+    - target: {fileID: 305794124482985680, guid: d224764d6f808854e9b71d59007c377b, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: AbilityExample, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 305794124482985680, guid: d224764d6f808854e9b71d59007c377b, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 2871699163284788735, guid: d224764d6f808854e9b71d59007c377b, type: 3}
       propertyPath: m_IsActive
@@ -141,7 +168,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2877989842477205738, guid: d224764d6f808854e9b71d59007c377b, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2877989842477205738, guid: d224764d6f808854e9b71d59007c377b, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1995592575}
+    - target: {fileID: 2877989842477205738, guid: d224764d6f808854e9b71d59007c377b, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ResetMeteorStorm
+      objectReference: {fileID: 0}
+    - target: {fileID: 2877989842477205738, guid: d224764d6f808854e9b71d59007c377b, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: AbilityExample, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 2877989842477205738, guid: d224764d6f808854e9b71d59007c377b, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 3196524741146995796, guid: d224764d6f808854e9b71d59007c377b, type: 3}
       propertyPath: m_Name
@@ -178,6 +221,10 @@ PrefabInstance:
     - target: {fileID: 6482661813150546469, guid: d224764d6f808854e9b71d59007c377b, type: 3}
       propertyPath: m_Name
       value: Container Ability
+      objectReference: {fileID: 0}
+    - target: {fileID: 6482661813150546469, guid: d224764d6f808854e9b71d59007c377b, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6904892657545185088, guid: d224764d6f808854e9b71d59007c377b, type: 3}
       propertyPath: m_Pivot.x
@@ -270,7 +317,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6482661813150546469, guid: d224764d6f808854e9b71d59007c377b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1485875452}
   m_SourcePrefab: {fileID: 100100000, guid: d224764d6f808854e9b71d59007c377b, type: 3}
 --- !u!224 &297127632 stripped
 RectTransform:
@@ -458,6 +508,62 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1223656126 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7697396409268614819, guid: d224764d6f808854e9b71d59007c377b, type: 3}
+  m_PrefabInstance: {fileID: 297127631}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1234307280 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7148171169282572724, guid: d224764d6f808854e9b71d59007c377b, type: 3}
+  m_PrefabInstance: {fileID: 297127631}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &1485875451 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6482661813150546469, guid: d224764d6f808854e9b71d59007c377b, type: 3}
+  m_PrefabInstance: {fileID: 297127631}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1485875452
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1485875451}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8694ef2dc1cc7b478a1ac87b5c8a8af, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AbilityView
+  _image: {fileID: 1223656126}
+  _nameText: {fileID: 1644463124}
+  _damageText: {fileID: 1234307280}
+  _cooldownText: {fileID: 1989995631}
+  _criticalChanceText: {fileID: 1493663147}
+  _levelText: {fileID: 9193424}
+--- !u!114 &1493663147 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2650866013871584509, guid: d224764d6f808854e9b71d59007c377b, type: 3}
+  m_PrefabInstance: {fileID: 297127631}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1523235466
 GameObject:
   m_ObjectHideFlags: 0
@@ -595,6 +701,28 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1644463124 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3194027799822227395, guid: d224764d6f808854e9b71d59007c377b, type: 3}
+  m_PrefabInstance: {fileID: 297127631}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1989995631 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6504715551636775442, guid: d224764d6f808854e9b71d59007c377b, type: 3}
+  m_PrefabInstance: {fileID: 297127631}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1995592572
 GameObject:
   m_ObjectHideFlags: 0
@@ -604,6 +732,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1995592574}
+  - component: {fileID: 1995592575}
   m_Layer: 0
   m_Name: Example
   m_TagString: Untagged
@@ -626,6 +755,23 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1995592575
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1995592572}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d8be1bdea27f214f937584d239eebc3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AbilityExample
+  _meteorStormDefinition: {fileID: 11400000, guid: 38c9822648cddd546a8a8ccb53789642, type: 2}
+  _meteorStorm:
+    <Level>k__BackingField: 0
+    <Definition>k__BackingField: {fileID: 0}
+  _view: {fileID: 1485875452}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
