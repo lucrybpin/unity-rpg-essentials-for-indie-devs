@@ -1,0 +1,35 @@
+using System;
+using UnityEngine;
+
+[Serializable]
+public class Ability
+{
+    [field: SerializeField] public int Level { get; private set; }
+    [field: SerializeField] public AbilityDefinition Definition { get; private set; }
+
+    public void LevelUp()
+    {
+        if (Level < Definition.Levels.Count)
+            Level++;
+    }
+
+    public void Reset()
+    {
+        Level = 1;
+    }
+
+    public (int, int) GetDamage()
+    {
+        return (Definition.Levels[Level - 1].BaseMinDamage, Definition.Levels[Level - 1].BaseMaxDamage);
+    }
+
+    public float GetCriticalChance()
+    {
+        return Definition.Levels[Level - 1].BaseCriticalChance;
+    }
+
+    public float GetCooldown()
+    {
+        return Definition.Levels[Level - 1].BaseCooldownTime;
+    }
+}
