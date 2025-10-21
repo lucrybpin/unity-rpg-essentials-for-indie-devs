@@ -1,3 +1,4 @@
+using FGT.Prototypes.DamagePopup;
 using UnityEngine;
 
 public class DamageExample : MonoBehaviour
@@ -35,7 +36,11 @@ public class DamageExample : MonoBehaviour
         // View
         _ = _abilityButtons[index].EnterCooldown(ability.GetCooldown());
 
-        Debug.Log($">>>> Executing Ability {0} - Damage {finalDamage}");
+        DamagePopup damagePopup;
+        if (isCritical)
+            damagePopup = DamagePopup.Create($"critical!", Vector3.zero + Vector3.up * 0.2f, null, Color.white, 2);
+        damagePopup = DamagePopup.Create($"{finalDamage}", Vector3.zero, null, Color.red, 4);
+
 
         _ = ability.StartCooldown();
     }
