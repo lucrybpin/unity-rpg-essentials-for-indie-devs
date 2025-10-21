@@ -6,6 +6,7 @@ public class Ability
 {
     [field: SerializeField] public int Level { get; private set; }
     [field: SerializeField] public AbilityDefinition Definition { get; private set; }
+    [field: SerializeField] public bool IsInCooldown { get; private set; }
 
     public Ability(AbilityDefinition definition)
     {
@@ -37,5 +38,12 @@ public class Ability
     public float GetCooldown()
     {
         return Definition.Levels[Level - 1].BaseCooldownTime;
+    }
+
+    public async Awaitable StartCooldown()
+    {
+        IsInCooldown = true;
+        await Awaitable.WaitForSecondsAsync(GetCooldown(), Application.exitCancellationToken);
+        IsInCooldown = false;
     }
 }
