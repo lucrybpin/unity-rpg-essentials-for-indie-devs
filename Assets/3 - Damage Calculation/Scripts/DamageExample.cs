@@ -4,6 +4,12 @@ public class DamageExample : MonoBehaviour
 {
     [SerializeField] int _attributePoints;
     [SerializeField] Ability[] _abilities;
+    [SerializeField] AbilityButton[] _abilityButtons;
+
+    void Awake()
+    {
+        _abilityButtons[0].onClick += ExecuteAbility;
+    }
 
     void Update()
     {
@@ -24,7 +30,10 @@ public class DamageExample : MonoBehaviour
         int baseDamage = Random.Range(minDamage, maxDamage + 1);
         bool isCritical = Random.Range(0, 1f) < ability.GetCriticalChance() ? true : false;
 
-        int finalDamage = CombatUtils.CalculateDamage(baseDamage, -_attributePoints, isCritical);
+        int finalDamage = CombatUtils.CalculateDamage(baseDamage, _attributePoints, isCritical);
+
+        // View
+        _ = _abilityButtons[index].EnterCooldown(ability.GetCooldown());
 
         Debug.Log($">>>> Executing Ability {0} - Damage {finalDamage}");
 
