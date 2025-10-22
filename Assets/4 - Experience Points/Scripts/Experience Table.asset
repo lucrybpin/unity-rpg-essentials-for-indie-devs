@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d29580b11c8f52540bc46b0456f09d2f, type: 3}
   m_Name: Experience Table
   m_EditorClassIdentifier: 
-  FromLevel: 
+  FromLevel: 0a0000000c000000190000001e000000

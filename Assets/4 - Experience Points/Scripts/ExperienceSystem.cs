@@ -1,6 +1,7 @@
 using System;
 using UnityEngine;
 
+[Serializable]
 public class ExperienceSystem
 {
     [SerializeField] ExperienceTable _experienceTable;
@@ -19,6 +20,8 @@ public class ExperienceSystem
 
     public void AddExp(int experience)
     {
+        Debug.Log($">>>> Add Exp");
+        
         // Max Level
         if (_currentLevel >= _experienceTable.FromLevel.Count)
             return;
