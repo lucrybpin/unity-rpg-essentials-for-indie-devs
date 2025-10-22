@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class ExperienceSystem
@@ -5,6 +6,9 @@ public class ExperienceSystem
     [SerializeField] ExperienceTable _experienceTable;
     [SerializeField] int _currentLevel;
     [SerializeField] int _currentExp;
+
+    // current Level, current experience, max level exp
+    public event Action<int, int, int> OnExperienceChanged;
 
     public ExperienceSystem(ExperienceTable experienceTable)
     {
@@ -15,12 +19,32 @@ public class ExperienceSystem
 
     public void AddExp(int experience)
     {
+        // Max Level
+        if (_currentLevel >= _experienceTable.FromLevel.Count)
+            return;
+
         _currentExp += experience;
         CheckLevelUp();
+
+        bool isMaxLevel = _currentLevel >= _experienceTable.FromLevel.Count;
+        int experienceLevelLimit = isMaxLevel
+            ? _experienceTable.FromLevel[_experienceTable.FromLevel.Count - 1]
+            : _experienceTable.FromLevel[_currentLevel - 1];
+
+        OnExperienceChanged?.Invoke(_currentLevel, _currentExp, experienceLevelLimit);
     }
 
     void CheckLevelUp()
     {
-        // Checks
+        while (_currentLevel < _experienceTable.FromLevel.Count &&
+            _currentExp >= _experienceTable.FromLevel[_currentLevel - 1])
+        {
+            _currentExp -= _experienceTable.FromLevel[_currentLevel - 1];
+            _currentLevel++;
+        }
+
+        bool isMaxLevel = _currentLevel >= _experienceTable.FromLevel.Count;
+        if (isMaxLevel)
+            _currentExp = 0;
     }
 }
