@@ -16,10 +16,19 @@ public class InventoryExample : MonoBehaviour
         {
             AddAxe();
         }
+        if(Input.GetKeyDown(KeyCode.Q))
+        {
+            RemoveAxe();
+        }
     }
 
     public void AddAxe()
     {
         _inventory.AddItem(_axe);
+    }
+
+    public void RemoveAxe()
+    {
+        _inventory.RemoveItem(_axe);
     }
 }

@@ -35,7 +35,26 @@ public class Inventory
         return;
     }
 
-    // Remove Item
+    public Item RemoveItem(Item item)
+    {
+        Item removedItem;
+        InventorySlot slot = FindSlotWithItem(item);
+
+        if (slot == null)
+            return null;
+
+        removedItem = slot.Item;
+
+        if (slot.Quantity > 1)
+            slot.Quantity--;
+        else
+        {
+            slot.Item = null;
+            slot.Quantity = 0;
+        }
+
+        return removedItem;
+    }
 
     // Swap
 
@@ -52,6 +71,15 @@ public class Inventory
     {
         foreach (InventorySlot slot in Slots)
             if (slot.IsEmpty())
+                return slot;
+
+        return null;
+    }
+
+    InventorySlot FindSlotWithItem(Item item)
+    {
+        foreach (InventorySlot slot in Slots)
+            if (slot.Item == item)
                 return slot;
 
         return null;
