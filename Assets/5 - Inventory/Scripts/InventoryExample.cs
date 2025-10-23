@@ -3,6 +3,7 @@ using UnityEngine;
 public class InventoryExample : MonoBehaviour
 {
     [SerializeField] Inventory _inventory;
+    [SerializeField] InventoryView _view;
     [SerializeField] Item _axe;
     [SerializeField] Item _brokenAxe;
     [SerializeField] Item _gem;
@@ -10,6 +11,7 @@ public class InventoryExample : MonoBehaviour
     void Awake()
     {
         _inventory = new Inventory(4);
+        _view.Render(_inventory);
     }
 
     void Update()
@@ -17,33 +19,40 @@ public class InventoryExample : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Alpha1))
         {
             AddAxe();
+            _view.Render(_inventory);
         }
-        else  if(Input.GetKeyDown(KeyCode.Q))
+        else if (Input.GetKeyDown(KeyCode.Q))
         {
             RemoveAxe();
+            _view.Render(_inventory);
         }
 
-        else  if (Input.GetKeyDown(KeyCode.Alpha2))
+        else if (Input.GetKeyDown(KeyCode.Alpha2))
         {
             AddBrokenAxe();
+            _view.Render(_inventory);
         }
-        else  if (Input.GetKeyDown(KeyCode.W))
+        else if (Input.GetKeyDown(KeyCode.W))
         {
             RemoveBrokenAxe();
+            _view.Render(_inventory);
         }
 
         else if (Input.GetKeyDown(KeyCode.Alpha3))
         {
             AddGem();
+            _view.Render(_inventory);
         }
         else if (Input.GetKeyDown(KeyCode.E))
         {
             RemoveGem();
+            _view.Render(_inventory);
         }
 
         else if (Input.GetKeyDown(KeyCode.Z))
         {
             Swap(0, 1);
+            _view.Render(_inventory);
         }
 
     }
