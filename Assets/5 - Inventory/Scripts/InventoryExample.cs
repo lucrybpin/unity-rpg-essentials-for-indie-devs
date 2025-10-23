@@ -11,6 +11,7 @@ public class InventoryExample : MonoBehaviour
     void Awake()
     {
         _inventory = new Inventory(4);
+        _view.OnItemSwap += Swap;
         _view.Render(_inventory);
     }
 
@@ -19,40 +20,33 @@ public class InventoryExample : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Alpha1))
         {
             AddAxe();
-            _view.Render(_inventory);
         }
         else if (Input.GetKeyDown(KeyCode.Q))
         {
             RemoveAxe();
-            _view.Render(_inventory);
         }
 
         else if (Input.GetKeyDown(KeyCode.Alpha2))
         {
             AddBrokenAxe();
-            _view.Render(_inventory);
         }
         else if (Input.GetKeyDown(KeyCode.W))
         {
             RemoveBrokenAxe();
-            _view.Render(_inventory);
         }
 
         else if (Input.GetKeyDown(KeyCode.Alpha3))
         {
             AddGem();
-            _view.Render(_inventory);
         }
         else if (Input.GetKeyDown(KeyCode.E))
         {
             RemoveGem();
-            _view.Render(_inventory);
         }
 
         else if (Input.GetKeyDown(KeyCode.Z))
         {
             Swap(0, 1);
-            _view.Render(_inventory);
         }
 
     }
@@ -60,36 +54,43 @@ public class InventoryExample : MonoBehaviour
     public void AddAxe()
     {
         _inventory.AddItem(_axe);
+        _view.Render(_inventory);
     }
 
     public void AddBrokenAxe()
     {
         _inventory.AddItem(_brokenAxe);
+        _view.Render(_inventory);
     }
 
     public void AddGem()
     {
         _inventory.AddItem(_gem);
+        _view.Render(_inventory);
     }
 
     public void RemoveAxe()
     {
         _inventory.RemoveItem(_axe);
+        _view.Render(_inventory);
     }
 
     public void RemoveBrokenAxe()
     {
         _inventory.RemoveItem(_brokenAxe);
+        _view.Render(_inventory);
     }
 
     public void RemoveGem()
     {
         _inventory.RemoveItem(_gem);
+        _view.Render(_inventory);
     }
 
     public void Swap(int index1, int index2)
     {
         _inventory.Swap(index1, index2);
+        _view.Render(_inventory);
     }
 
 }
