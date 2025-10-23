@@ -56,7 +56,18 @@ public class Inventory
         return removedItem;
     }
 
-    // Swap
+    public bool Swap(int index1, int index2)
+    {
+        if (index1 < 0 || index1 >= Slots.Count || index2 < 0 || index2 >= Slots.Count)
+            return false;
+
+        if (index1 == index2)
+            return true;
+
+        (Slots[index1], Slots[index2]) = (Slots[index2], Slots[index1]);
+
+        return true;
+    }
 
     InventorySlot FindAvilableSlotWithItem(Item item)
     {

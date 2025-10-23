@@ -664,6 +664,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7769160360662036246, guid: 942cde344274bd14bb51e762b5211fa7, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 120
+      objectReference: {fileID: 0}
     - target: {fileID: 8313994678674096489, guid: 942cde344274bd14bb51e762b5211fa7, type: 3}
       propertyPath: m_Enabled
       value: 0
@@ -725,8 +729,14 @@ MonoBehaviour:
   _inventory:
     <Slots>k__BackingField: []
   _axe:
-    Definition: {fileID: 11400000, guid: 33e45184b9f70d74380fdc205a966cef, type: 2}
+    Definition: {fileID: 11400000, guid: b16d2a65f1e7d5b489dbab67cf97583e, type: 2}
     Durability: 10
+  _brokenAxe:
+    Definition: {fileID: 11400000, guid: b16d2a65f1e7d5b489dbab67cf97583e, type: 2}
+    Durability: 0
+  _gem:
+    Definition: {fileID: 11400000, guid: 33e45184b9f70d74380fdc205a966cef, type: 2}
+    Durability: 7
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
