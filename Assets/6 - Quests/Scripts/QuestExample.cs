@@ -4,6 +4,7 @@ public class QuestExample : MonoBehaviour
 {
     [SerializeField] QuestRepository _repository;
     [SerializeField] QuestController _questController;
+    [SerializeField] QuestView _view;
 
     void Awake()
     {
@@ -14,15 +15,18 @@ public class QuestExample : MonoBehaviour
     public void AddQuest(string questID)
     {
         Quest quest = _questController.AddQuest(questID);
+        _view.Render(quest);
     }
 
     public void FinishTask(string taskID)
     {
         Quest quest = _questController.FinishTask(taskID);
+        _view.Render(quest);
     }
 
     public void FinishQuest(string questID)
     {
         Quest quest = _questController.FinishQuest(questID);
+        _view.Render(quest);
     }
 }
