@@ -13,7 +13,6 @@ public class QuestController
         _repository = repository;
     }
 
-    // Add Quest
     public Quest AddQuest(string questID)
     {
         Quest questFound = FindQuest(questID);
@@ -32,7 +31,23 @@ public class QuestController
 
     // Finish Quest
 
-    // Finish a Task
+    public Quest FinishTask(string taskID)
+    {
+        Quest questFound = null;
+        foreach (Quest quest in _quests)
+        {
+            foreach (QuestTask task in quest.Tasks)
+            {
+                if (task.Definition.TaskID == taskID)
+                {
+                    task.IsCompleted = true;
+                    questFound = quest;
+                }
+            }
+        }
+
+        return questFound;
+    }
 
     public Quest FindQuest(string questID)
     {

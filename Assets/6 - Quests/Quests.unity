@@ -660,6 +660,38 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6293519468040440318, guid: 99f9a0a229c7acf4aafa05f7c0b9cd34, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6293519468040440318, guid: 99f9a0a229c7acf4aafa05f7c0b9cd34, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6293519468040440318, guid: 99f9a0a229c7acf4aafa05f7c0b9cd34, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1995592575}
+    - target: {fileID: 6293519468040440318, guid: 99f9a0a229c7acf4aafa05f7c0b9cd34, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6293519468040440318, guid: 99f9a0a229c7acf4aafa05f7c0b9cd34, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: FinishTask
+      objectReference: {fileID: 0}
+    - target: {fileID: 6293519468040440318, guid: 99f9a0a229c7acf4aafa05f7c0b9cd34, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: QuestExample, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6293519468040440318, guid: 99f9a0a229c7acf4aafa05f7c0b9cd34, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: 0000-02
+      objectReference: {fileID: 0}
+    - target: {fileID: 6293519468040440318, guid: 99f9a0a229c7acf4aafa05f7c0b9cd34, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -895,6 +927,38 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4292670163114663380, guid: e9935911625fe9b4d841e04f04548be0, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4292670163114663380, guid: e9935911625fe9b4d841e04f04548be0, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4292670163114663380, guid: e9935911625fe9b4d841e04f04548be0, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1995592575}
+    - target: {fileID: 4292670163114663380, guid: e9935911625fe9b4d841e04f04548be0, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4292670163114663380, guid: e9935911625fe9b4d841e04f04548be0, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: FinishTask
+      objectReference: {fileID: 0}
+    - target: {fileID: 4292670163114663380, guid: e9935911625fe9b4d841e04f04548be0, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: QuestExample, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4292670163114663380, guid: e9935911625fe9b4d841e04f04548be0, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: 0000-00
+      objectReference: {fileID: 0}
+    - target: {fileID: 4292670163114663380, guid: e9935911625fe9b4d841e04f04548be0, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 5950055690073950060, guid: e9935911625fe9b4d841e04f04548be0, type: 3}
       propertyPath: m_Name
       value: Button Finish Task 1
@@ -921,6 +985,38 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 444568311}
     m_Modifications:
+    - target: {fileID: 5001617655914384212, guid: 5b87aa16528e36b44abb857aaf2f398c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5001617655914384212, guid: 5b87aa16528e36b44abb857aaf2f398c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5001617655914384212, guid: 5b87aa16528e36b44abb857aaf2f398c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1995592575}
+    - target: {fileID: 5001617655914384212, guid: 5b87aa16528e36b44abb857aaf2f398c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5001617655914384212, guid: 5b87aa16528e36b44abb857aaf2f398c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: FinishTask
+      objectReference: {fileID: 0}
+    - target: {fileID: 5001617655914384212, guid: 5b87aa16528e36b44abb857aaf2f398c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: QuestExample, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5001617655914384212, guid: 5b87aa16528e36b44abb857aaf2f398c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: 0000-01
+      objectReference: {fileID: 0}
+    - target: {fileID: 5001617655914384212, guid: 5b87aa16528e36b44abb857aaf2f398c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 6220023469388224308, guid: 5b87aa16528e36b44abb857aaf2f398c, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
