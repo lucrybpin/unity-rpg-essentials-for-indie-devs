@@ -29,7 +29,24 @@ public class QuestController
         return null;
     }
 
-    // Finish Quest
+    public Quest FinishQuest(string questID)
+    {
+        QuestDefinition questDefinition = _repository.GetQuestDefinitionFromID(questID);
+        Quest questFound = FindQuest(questID);
+
+        if (questFound == null)
+            return null;
+
+        bool allTasksFinished = true;
+        foreach (QuestTask task in questFound.Tasks)
+            if (!task.IsCompleted)
+                allTasksFinished = false;
+
+        if (allTasksFinished == true)
+            questFound.IsCompleted = true;
+
+        return questFound;
+    }
 
     public Quest FinishTask(string taskID)
     {

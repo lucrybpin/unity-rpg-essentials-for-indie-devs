@@ -233,6 +233,38 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 444568311}
     m_Modifications:
+    - target: {fileID: 107827077864101567, guid: 46aba7006bed6e9468d8b42f2dbf3188, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 107827077864101567, guid: 46aba7006bed6e9468d8b42f2dbf3188, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 107827077864101567, guid: 46aba7006bed6e9468d8b42f2dbf3188, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1995592575}
+    - target: {fileID: 107827077864101567, guid: 46aba7006bed6e9468d8b42f2dbf3188, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 107827077864101567, guid: 46aba7006bed6e9468d8b42f2dbf3188, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: FinishQuest
+      objectReference: {fileID: 0}
+    - target: {fileID: 107827077864101567, guid: 46aba7006bed6e9468d8b42f2dbf3188, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: QuestExample, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 107827077864101567, guid: 46aba7006bed6e9468d8b42f2dbf3188, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: 0000
+      objectReference: {fileID: 0}
+    - target: {fileID: 107827077864101567, guid: 46aba7006bed6e9468d8b42f2dbf3188, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 5105944152053904426, guid: 46aba7006bed6e9468d8b42f2dbf3188, type: 3}
       propertyPath: m_Name
       value: Button Finish Quest

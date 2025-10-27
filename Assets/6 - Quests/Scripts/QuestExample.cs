@@ -20,4 +20,9 @@ public class QuestExample : MonoBehaviour
     {
         Quest quest = _questController.FinishTask(taskID);
     }
+
+    public void FinishQuest(string questID)
+    {
+        Quest quest = _questController.FinishQuest(questID);
+    }
 }
